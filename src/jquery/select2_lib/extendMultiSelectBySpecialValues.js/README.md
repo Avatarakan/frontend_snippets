@@ -1,4 +1,4 @@
-# ExtendMultiSelect2BySpecialValues
+# ExtendMultiSelectBySpecialValues
 This class extends the functionality of Select2 for handling special values. It provides options for default values and single values, ensuring specific behavior during selection and unselection.
 
 ## Usage
@@ -7,7 +7,7 @@ This class extends the functionality of Select2 for handling special values. It 
 import ExtendMultiSelectBySpecialValues from './ExtendMultiSelectBySpecialValues';
 
 // Initialize with a selector, default value, and single values
-const select2Extension = new ExtendMultiSelect2BySpecialValues({
+const select2Extension = new ExtendMultiSelectBySpecialValues({
   selector: '#yourSelectElement',
   defaultValue: 'default',
   singleValues: ['singleValue1', 'singleValue2'],
