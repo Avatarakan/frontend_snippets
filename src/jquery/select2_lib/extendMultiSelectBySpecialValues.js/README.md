@@ -2,7 +2,7 @@
 This class extends the functionality of Select2 for handling special values. It provides options for default values and single values, ensuring specific behavior during selection and unselection.
 
 ## Usage
-<pre>
+```js
 // Import the class
 import ExtendMultiSelectBySpecialValues from './ExtendMultiSelectBySpecialValues';
 
@@ -15,7 +15,7 @@ const select2Extension = new ExtendMultiSelect2BySpecialValues({
 
 // Initialize the events
 select2Extension.init();
-</pre>
+```
 
 ## Parameters
 - selector (Required): A jQuery selector to get the element.
@@ -24,7 +24,7 @@ select2Extension.init();
 
 ## Example
 ### html file
-<pre>
+```html
 <select
     id="some_id"
     class="select2"
@@ -35,16 +35,16 @@ select2Extension.init();
     <option value="2">Value 2</option>
     <option value="3">Value 3</option>
 </select>
-</pre>
+```
 
 ### js code file
-<pre>
+```js
 new ExtendMultiSelectBySpecialValues({
     selector: '#filter-ramps',
     defaultValue: '0',
     singleValues: '2'
 }).init();
-</pre>
+```
 
 ## Functionality
 - Default Value: Set the default value every time if the multiselect is empty. Remove other selected values after selecting the default value.
